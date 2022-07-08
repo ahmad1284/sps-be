@@ -16,19 +16,19 @@ public class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(ProjectRepository repository){
         return args -> {
-            // log.info("Preloading " + repository.save(new Project("Student Project Showcase", "Test No 1", "https://github.com/ahmad1284/sps", "https://suzasps.netlify.app", "https://youtube.com", "Ahmad Abdullah", "https://picsum.photos/id/5l/500/350")));
+            log.info("Preloading " + repository.save(new Project("Student Project Showcase", "A place to find suza students", "https://github.com/ahmad1284/sps", "https://suzasps.netlify.app", "https://picsum.photos/id/5l/500/350")));
 
-            // log.info("Preloading " + repository.save(new Project("Ahmad's portfolio", "Test No 2", "https://github.com/ahmad1284/resume", "https://ahmad1284.github.io/resume", "https://youtube.com", "Ahmad Abdullah", "https://picsum.photos/id/6l/500/350")));
-
-            log.info("Preloading " + repository.save(new Project("Swahili NER")));
-            log.info("Preloading " + repository.save(new Project("Digital Storytelling")));
-            log.info("Preloading " + repository.save(new Project("Virtual Tours")));
-            log.info("Preloading " + repository.save(new Project("Twitter Sentiment")));
-            log.info("Preloading " + repository.save(new Project("3D Pointer")));
-            log.info("Preloading " + repository.save(new Project("Route Finder")));
-            log.info("Preloading " + repository.save(new Project("Virtual assistance")));
-            log.info("Preloading " + repository.save(new Project("Diet Planner")));
-            log.info("Preloading " + repository.save(new Project("GPA Calculator")));
+            log.info("Preloading " + repository.save(new Project("Ahmad's resume", "Ahmad's resume", "https://github.com/ahmad1284/resume", "https://ahmad1284.github.io/resume", "https://picsum.photos/id/6l/500/350")));
+            
+            // log.info("Preloading " + repository.save(new Project("Swahili NER","")));
+            // log.info("Preloading " + repository.save(new Project("Digital Storytelling")));
+            // log.info("Preloading " + repository.save(new Project("Virtual Tours")));
+            // log.info("Preloading " + repository.save(new Project("Twitter Sentiment")));
+            // log.info("Preloading " + repository.save(new Project("3D Pointer")));
+            // log.info("Preloading " + repository.save(new Project("Route Finder")));
+            // log.info("Preloading " + repository.save(new Project("Virtual assistance")));
+            // log.info("Preloading " + repository.save(new Project("Diet Planner")));
+            // log.info("Preloading " + repository.save(new Project("GPA Calculator")));
         };
     }
 }
